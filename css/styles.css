@@ -1,0 +1,112 @@
+:root {
+    --color-principal: #20a997;
+    --color-secundario: #f4f4f4;
+    --color-texto: #333;
+    --espaciado: 20px;
+    --radio-borde: 10px;
+    --sombra: 0px 2px 8px rgba(0,0,0,0.15);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: var(--color-principal);
+}
+
+.encabezado {
+    background-color: var(--color-principal);
+    color: white;
+    padding: var(--espaciado);
+    text-align: center;
+    border-radius: 0 0 var(--radio-borde) var(--radio-borde);
+}
+
+.encabezado h1,
+.encabezado h2 {
+    color: white;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navegacion {
+    margin-top: 10px;
+}
+
+.navegacion a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: var(--espaciado);
+}
+
+.contenido img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radio-borde);
+    object-fit: cover;
+    box-shadow: var(--sombra);
+}
+
+.raza {
+    background-color: white;
+    padding: var(--espaciado);
+    margin: 10px;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+    text-align: center;
+}
+
+.raza img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: var(--radio-borde);
+    margin-bottom: 10px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main.contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: var(--espaciado);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pie {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: var(--radio-borde) var(--radio-borde) 0 0;
+}
